@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="assets/styles/static/css/footer.css"> 
     <link rel="shortcut icon" type="image/jpeg" href="assets/img/prl.jpg"/> 
 
-    <title>ICRA 2018 Workshop: Inference for Manipulation Task under Uncertainty: How to sense, plan, and act?</title>
+    <title>ICRA 2018 Workshop: Task Representations for Manipulation under Uncertainty</title>
   </head>
   <body>
     <div id="prl-header">
       <div class="container">
         <h3 align="center">ICRA 2018 Workshop</h3>
-        <h1 class="unitmark" align="center">Inference for Manipulation Task under Uncertainty</h1>
+        <h1 class="unitmark" align="center">Task Representations for Manipulation under Uncertainty</h1>
         <h3 align="center">June 4, 2020 | Paris, France</h3>
 
         <div class="row">
@@ -46,18 +46,16 @@
 <h3 id="description" style="padding-bottom:5px;">Description</h3>
 <div class="row">
   <div class="col-xs-12">
-  <p>
-    Motion planning has a rich and varied history. The bulk of the research in planning has focused on development of tractable algorithms with provable <i>worst-case performance guarantees</i>. In contrast, well-understood theory and practice in machine learning is concerned with <i>expected</i> performance (e.g. supervised learning). As affordable sensors, actuators and robots that navigate, interact and collect data proliferate, we are motivated to examine new algorithmic questions such as &quot What roles can statistical techniques play in overcoming traditional bottlenecks in planning?&quot, &quot How do we maintain worst-case performance guarantees while leveraging learning to improve expected performance?&quot and &quot How can common limitations inherited from data-driven methods (e.g. covariate shift) be mitigated while combining with traditional planning methods? &quot
-<!--     Robots are leaving the cages of the industrial manufacturing production lines and the safety of research labs, and moving into the unstructured environments of everyday life. From human-in-the-way to human-in-the-loop, modern robotics problems typically involve robot interactions with and around humans. Solving such problems requires research in complementary areas: <i>algorithmic robotics</i>, such as motion planning and machine learning, and <i>human-robot interaction</i> (HRI), such as cognitive modeling, intention recognition, and activity prediction. Both areas have much to contribute to each other in terms of methods, approaches, and insights, and yet the algorithmic robotics and human-robot interaction communities remain largely disjoint groups. There are four goals for this workshop: to (1) <i>expose approaches</i> from HRI that inform algorithmic models of humans, (2) <i>identify mathematical and algorithmic tools</i> to address HRI problems, (3) <i>encourage conversation</i> between researchers in the areas of HRI and fundamental algorithms for robotics, and (4) <i>raise a series of open questions</i> that fall in the intersection of algorithmic robotics and HRI.  -->
-  </p>
-  <p>
-   Both areas have much to contribute to each other in terms of methods, approaches, and insights, and yet motion planning and machine learning communities remain largely disjoint groups. There are four technical goals for this workshop in addition to encouraging dialogue between both communities:
-  <ul>
-  <li>Formalize paradigms in motion planning where statistical methods can play an essential role.</li>
-  <li>Identify learning algorithms that can alleviate planning bottlenecks.</li>
-  <li>Better understand common pitfalls of naively combining learning and planning and explore strategies for mitigation.</li>
-  <li>Arrive at a set of critical open questions that are at the intersection of the two fields. </li>
-  </ul>
+      <p>
+          Building autonomous robots capable of performing challenging manipulation tasks is an overarching goal of robotics and AI community. Recent progress in robot perception and learning has moved the needle significantly toward this goal. However, many of these developments are still confined to structured home laboratory settings. To move to unstructured, real-world scenarios, such as uncontrolled and often cluttered household or office environments, and achieve robustness in task completion we encounter two main challenges: 1) large variations across task instances and environments, and 2) uncertainty about the exact state as well as unmodeled artifacts in the real world environments.
+          </p>
+          
+      <p>
+          Consider the task of assembling IKEA furniture in your home. Each furniture has variations in their assembling procedure, however, they do have similarities in each of the subtasks. A generalized task representation should account for these variations and similarities. The robust task execution in real world is fundamentally tied to the interpretation and distillation of task-relevant information and world knowledge into a useful representation. This task representation has to be sufficient to plan and control robot interactions, in the face of uncertainty. Uncertainty arises from many places including the variety of real world environments as well as variability in outcomes of robot action execution. We posit that a generalized task representation that accommodates aforementioned real world uncertainties is key toward realizing personal robots that can perform long horizon manipulation tasks.
+          </p>
+          
+      <p>
+          In this workshop we wish to bring in researchers from all domains (robot perception, planning, control, knowledge representation, and machine learning) and discuss approaches and challenges to develop task representations that deal with uncertainty. Our goal is to formalize the effectiveness of a task representation in face of uncertainty and arrive at a set of critical challenges and open questions. We hope to spark discussions towards common task-representations, scalable approaches, learning based solutions, model based and model free approaches that will be vital for the robotics community at large.          
   </p>
   </div>
 </div>
@@ -71,19 +69,20 @@
   We solicit <b>3 page extended abstracts</b> (page counts do not include references). On acceptance, the camera ready version can be a full paper <b>upto 6 pages</b> (excluding references). Submissions can include original research, position papers, and literature reviews that bridge the research areas for this workshop. Submissions will be externally reviewed, and selected based on technical content and ability to positively contribute to the workshop. All accepted contributions will be presented in interactive poster sessions. A subset of accepted contributions will be featured in the workshop as spotlight presentations.</p>
 
   <p>The following list contains some areas of interest, but work in other areas is also welcomed:
-  <ul>
-    <li> machine learning in planning and related topics </li>
-    <li> learning representations for planning </li>
-    <li> planning with learnt models</li>
-    <li> learning heuristics in search </li>
-    <li> learning sampling techniques </li>
-    <li> resource allocation in planning </li>
-    <li> learning in sequential decision making settings </li>
-    <li> sample efficient learning </li>
-    <li> learning robust models to deal with distribution shifts </li>
-    <li> bayesian models and novelty detection in decision making </li>
-    <li> online learning in decision making </li>
-    <li> learning applied to task and motion planning </li>
+      <ul>
+          <li> Task representations across sense, plan, and control areas </li>
+          <li> Task representations with explicit uncertainty </li>
+          <li> Task representations in object grasping and manipulation</li>
+          <li> Task representations in navigation and mobile manipulation</li>
+          <li> Reusable / scalable / transferable task representation</li>
+          <li> Dynamic task representations</li>
+          <li> Knowledge representation and reasoning</li>
+          <li> Representation learning</li>
+          <li> Interactive perception</li>
+          <li> Task and motion planning (TAMP)</li>
+          <li> Learning from demonstration</li>
+          <li> Hierarchical / multi task representations</li>
+          <li> Methodologies for task assessment</li>
   </ul>
   </p>
 
@@ -91,7 +90,8 @@
     We will accept papers in the official IEEE templates (<a href='http://ras.papercept.net/conferences/support/tex.php'>LaTeX</a> and <a href='http://ras.papercept.net/conferences/support/word.php'>Word</a>). Submissions must meet page restrictions (maximum of 3 pages for extended abstracts and 6 pages for full papers), but can include additional pages as long as those pages only contain references. Reviewing will <i>not</i> be double blind. Please do not anonymize the submission.</p>
 
   <p>
-  Papers and abstracts should be submitted through the following link: <a href="https://cmt3.research.microsoft.com/MLMP2018/" target="_ "> https://cmt3.research.microsoft.com/MLMP2018/ </a>. 
+       Papers and abstracts should be submitted through the following link: TBD.
+       <!--Papers and abstracts should be submitted through the following link: <a href="https://cmt3.research.microsoft.com/MLMP2018/" target="_ "> https://cmt3.research.microsoft.com/MLMP2018/ </a>. -->
   <p>
 
   </div>
@@ -149,10 +149,11 @@
  <h4>Location</h4>
 
   <div class="col-xs-12">
-  <p>Workshop: Main auditorium. </p>
+  <p>Workshop: TBD </p>
 <!--     . <a href='http://www.roboticsconference.org/docs/campusmap.pdf'>Map of the workshop buildings</a> (we are in building 36).</p> 
  -->  
- <p>Poster: Hall 2-B (please setup only after 2.00 p.m.) </p>
+ <p>Poster: TBD </p>
+ <!-- <p>Poster: Hall 2-B (please setup only after 2.00 p.m.) </p> -->
 </div> 
 
   <div class="row">
@@ -170,22 +171,24 @@
 <tr>
   <td>08:45 - 09:00am</td>
   <td>Introduction</td>
-  <td><a href="http://www.sanjibanchoudhury.com/" target="_blank">Sanjiban Choudhury</a></td>
+  <td>TBD</td>
+  <!-- <td><a href="http://www.sanjibanchoudhury.com/" target="_blank">TBD</a></td> -->
 </tr>
 <tr>
   <td>09:00 - 09:40am</td>
-  <td>TBD <a href="assets/ppts/max_iros_mlmp_2018.pdf" target="_blank">[pdf]</a> </td>
-  <td><a href="http://www.cs.cmu.edu/~maxim/" target="_blank">TBD</a></td>
+  <td>TBD</td>
+  <!-- <td>TBD <a href="assets/ppts/max_iros_mlmp_2018.pdf" target="_blank">[pdf]</a> </td> -->
+  <td>TBD</td>
 </tr>
 <tr>
   <td>09:40 - 10:20am</td>
-  <td>TBD <a href="assets/ppts/bohg_iros_mlmp_2018.pdf" target="_blank">[pdf]</a> </td>
-  <td> <a href="https://am.is.tuebingen.mpg.de/person/jbohg/" target="_blank"> TBD</a> </td>
+  <td>TBD</td>
+  <td>TBD</td>
 </tr>
 <tr>
   <td>10:20 - 11:00am</td>
   <td>TBD</td>
-  <td><a href="http://www.comp.nus.edu.sg/~dyhsu/" target="_blank">TBD</a></td>
+  <td>TBD</td>
 </tr>
 <tr style="background-color:lightgray">
   <td>11:00 - 11:30am</td>
@@ -199,13 +202,13 @@
 </tr>
 <tr>
   <td>12:10 - 12:50pm</td>
-  <td>TBD <a href="assets/ppts/marc_iros_mlmp_2018.pdf" target="_blank">[pdf]</td>
-  <td><a href="https://ipvs.informatik.uni-stuttgart.de/mlr/marc/index.html" target="_blank"> TBD</a> </td>
+  <td>TBD</td>
+  <td>TBD</td>
 </tr>
 <tr>
   <td>12:50 - 13:30pm</td>
-  <td>TBD <a href="assets/ppts/faust_iros_mlmp_2018.pdf" target="_blank">[pdf]</td>
-  <td><a href="http://www.afaust.info/" target="_blank"> TBD</a></td>
+  <td>TBD</td>
+  <td>TBD</td>
 </tr>
 <tr style="background-color:lightgray">
   <td>13:30 - 14:30pm</td>
@@ -214,18 +217,18 @@
 </tr>
 <tr>
   <td>14:30 - 15:10pm</td>
-  <td>TBD <a href="assets/ppts/sidd_iros_mlmp_2018.pdf" target="_blank">[pdf]</td>
-  <td><a href="https://homes.cs.washington.edu/~siddh/index.html" target="_blank"> TBD</a> </td>
+  <td>TBD</td>
+  <td>TBD</td>
 </tr>
 <tr>
   <td>15:10 - 15:50pm</td>
   <td>TBD</td>
-  <td><a href="https://www.microsoft.com/en-us/research/people/akolobov/" target="_blank"> TBD</a> </td>
+  <td>TBD</td>
 </tr>
 <tr>
   <td>15:50 - 16:30pm</td>
-  <td>TBD <a href="assets/ppts/boots_iros_mlmp_2018.pdf" target="_blank">[pdf]</td>
-  <td><a href="https://www.cc.gatech.edu/~bboots3/" target="_blank"> TBD</a> </td>
+  <td>TBD</td>
+  <td>TBD</td>
 </tr>
 <tr style="background-color:lightgray">
   <td>16:30 - 17:00pm</td>
@@ -254,23 +257,24 @@
 </div>
 
 
-<div class="row">
-  <div class="col-xs-12">
-    <h4>Invited Talks</h4>
-    <table>
+<!--div class="row"-->
+<!-- <div class="col-xs-12"> -->
+<!-- <h4>Invited Talks</h4> -->
+<!-- <table> -->
 
-    <tr>
-    <td><img class="profile" src="assets/img/speakers/TBD.jpg" alt="likachev"> </td>
-    <td> <h4 style="color:#373737; padding-bottom: 3px;"> <a href="http://www.cs.cmu.edu/~maxim/" target="_blank"> TBD</a>, TBD University </h4>
-         <h5 style="color:#373737;font-weight:bold">  TBD </h5>
-         <p style="font-size:11px"> TBD </p>
-         <a href="assets/ppts/max_iros_mlmp_2018.pdf" target="_blank">[pdf]</a> 
-    </td>
-    </tr>
+<!-- <tr> -->
+<!-- <td><img class="profile" src="assets/img/speakers/TBD.jpg" alt="TBD"> </td> -->
+<!-- <td>
+     <h4 style="color:#373737; padding-bottom: 3px;"> <a href="http://www.cs.cmu.edu/~maxim/" target="_blank"> TBD</a>, TBD University </h4>
+     <h5 style="color:#373737;font-weight:bold">  TBD </h5>
+     <p style="font-size:11px"> TBD </p>
+     <a href="assets/ppts/max_iros_mlmp_2018.pdf" target="_blank">[pdf]</a> 
+     </td> -->
+<!-- </tr>
 
-    </table>
-  </div>
-</div>
+     </table>
+     </div>
+     </div> -->
 <br> <br>
 
 
